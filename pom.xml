@@ -30,5 +30,8 @@
   
   <modules>
   	<module>network-interfaces</module>
+  	<module>listening-processes</module>
+  	<module>operating-system</module>
+  	<module>services</module>
   </modules>
 </project>
