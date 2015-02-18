@@ -40,4 +40,9 @@ public class NetworkInterfaceServerProperty extends ServerProperty {
 		this.macAddress = macAddress;
 	}
 	
+	@Override
+	public String getKey() {
+	    return this.name;
+	}
+	
 }

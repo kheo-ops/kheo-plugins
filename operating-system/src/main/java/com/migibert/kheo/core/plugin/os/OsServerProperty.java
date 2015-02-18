@@ -22,4 +22,9 @@ public class OsServerProperty extends ServerProperty {
 		this.kernelRelease = "";
 		this.hardwarePlatform = "";
 	}
+	
+	@Override
+	public String getKey() {
+	    return this.name;
+	}
 }

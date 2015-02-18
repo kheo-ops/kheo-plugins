@@ -22,4 +22,9 @@ public class ListeningProcessServerProperty extends ServerProperty {
 		this.port = "";
 		this.protocol = "";
 	}
+	
+	@Override
+	public String getKey() {
+	    return this.protocol + " - " + this.port;
+	}
 }

@@ -10,4 +10,9 @@ public class ServiceServerProperty extends ServerProperty {
 	public ServiceServerProperty() {
 		this.name = "";
 	}
+	
+	@Override
+	public String getKey() {
+	    return this.name;
+	}
 }
