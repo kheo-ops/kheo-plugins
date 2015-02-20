@@ -23,4 +23,9 @@ public class NetworkInterfacePlugin implements KheoPlugin<NetworkInterfaceServer
     public String getPropertyName() {
         return NetworkInterfaceServerProperty.class.getSimpleName();
     }
+    
+    @Override
+    public String getVersion() {
+        return "1.0";
+    }
 }

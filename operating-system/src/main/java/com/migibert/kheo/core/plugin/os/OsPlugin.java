@@ -23,4 +23,9 @@ public class OsPlugin implements KheoPlugin<OsServerProperty> {
     public String getPropertyName() {
         return OsServerProperty.class.getSimpleName();
     }
+    
+    @Override
+    public String getVersion() {
+        return "1.0";
+    }
 }

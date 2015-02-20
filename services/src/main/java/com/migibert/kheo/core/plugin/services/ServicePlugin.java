@@ -23,5 +23,10 @@ public class ServicePlugin implements KheoPlugin<ServiceServerProperty> {
     public String getPropertyName() {
         return ServiceServerProperty.class.getSimpleName();
     }
+    
+    @Override
+    public String getVersion() {
+        return "1.0";
+    }
 
 }

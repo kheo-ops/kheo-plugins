@@ -23,4 +23,9 @@ public class ListeningProcessPlugin implements KheoPlugin<ListeningProcessServer
     public String getPropertyName() {
         return ListeningProcessServerProperty.class.getSimpleName();
     }
+    
+    @Override
+    public String getVersion() {
+        return "1.0";
+    }
 }
