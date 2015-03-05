@@ -1,6 +1,7 @@
 package com.migibert.kheo.core.plugin.network.process;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.migibert.kheo.core.plugin.KheoType;
 import com.migibert.kheo.core.plugin.ServerProperty;
 
 public class ListeningProcessServerProperty extends ServerProperty {
@@ -15,6 +16,11 @@ public class ListeningProcessServerProperty extends ServerProperty {
 
 	@JsonProperty
 	public String protocol;
+	
+	@Override
+	public KheoType getKheoType() {
+	    return KheoType.JSON;
+	}
 
 	public ListeningProcessServerProperty() {
 		this.programName = "";

@@ -1,6 +1,7 @@
 package com.kheo.plugins.network.interfaces;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.migibert.kheo.core.plugin.KheoType;
 import com.migibert.kheo.core.plugin.ServerProperty;
 
 public class NetworkInterfaceServerProperty extends ServerProperty {
@@ -43,6 +44,11 @@ public class NetworkInterfaceServerProperty extends ServerProperty {
 	@Override
 	public String getKey() {
 	    return this.name;
+	}
+	
+	@Override
+	public KheoType getKheoType() {
+	    return KheoType.JSON;
 	}
 	
 }
