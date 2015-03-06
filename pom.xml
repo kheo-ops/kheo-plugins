@@ -33,5 +33,7 @@
   	<module>listening-processes</module>
   	<module>operating-system</module>
   	<module>services</module>
+  	<module>logo</module>
+  	<module>logo-png</module>
   </modules>
 </project>
