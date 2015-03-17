@@ -1,5 +1,9 @@
 package com.kheo.plugins.network.interfaces;
 
+import java.util.List;
+
+import org.assertj.core.util.Lists;
+
 import com.migibert.kheo.core.plugin.KheoPlugin;
 
 public class NetworkInterfacePlugin implements KheoPlugin<NetworkInterfaceServerProperty> {
@@ -20,8 +24,8 @@ public class NetworkInterfacePlugin implements KheoPlugin<NetworkInterfaceServer
     }
 
     @Override
-    public String getPropertyName() {
-        return NetworkInterfaceServerProperty.class.getSimpleName();
+    public List<String> getPropertiesNames() {
+        return Lists.newArrayList(NetworkInterfaceServerProperty.class.getSimpleName());
     }
     
     @Override

@@ -1,5 +1,9 @@
 package com.migibert.kheo.core.plugin.services;
 
+import java.util.List;
+
+import org.assertj.core.util.Lists;
+
 import com.migibert.kheo.core.plugin.KheoPlugin;
 
 public class ServicePlugin implements KheoPlugin<ServiceServerProperty> {
@@ -20,8 +24,8 @@ public class ServicePlugin implements KheoPlugin<ServiceServerProperty> {
     }
 
     @Override
-    public String getPropertyName() {
-        return ServiceServerProperty.class.getSimpleName();
+    public List<String> getPropertiesNames() {
+        return Lists.newArrayList(ServiceServerProperty.class.getSimpleName());
     }
     
     @Override
