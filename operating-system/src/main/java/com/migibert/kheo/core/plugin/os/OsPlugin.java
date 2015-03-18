@@ -1,5 +1,9 @@
 package com.migibert.kheo.core.plugin.os;
 
+import java.util.List;
+
+import jersey.repackaged.com.google.common.collect.Lists;
+
 import com.migibert.kheo.core.plugin.KheoPlugin;
 
 public class OsPlugin implements KheoPlugin<OsServerProperty> {
@@ -20,8 +24,8 @@ public class OsPlugin implements KheoPlugin<OsServerProperty> {
     }
 
     @Override
-    public String getPropertyName() {
-        return OsServerProperty.class.getSimpleName();
+    public List<String> getPropertiesNames() {
+        return Lists.newArrayList(OsServerProperty.class.getSimpleName());
     }
     
     @Override

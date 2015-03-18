@@ -1,5 +1,9 @@
 package com.migibert.kheo.core.plugin.logo;
 
+import java.util.List;
+
+import org.assertj.core.util.Lists;
+
 import com.migibert.kheo.core.plugin.KheoPlugin;
 
 public class LogoPngPlugin implements KheoPlugin<LogoPngServerProperty> {
@@ -20,8 +24,8 @@ public class LogoPngPlugin implements KheoPlugin<LogoPngServerProperty> {
     }
 
     @Override
-    public String getPropertyName() {
-        return LogoPngServerProperty.class.getSimpleName();
+    public List<String> getPropertiesNames() {
+        return Lists.newArrayList(LogoImagePngServerProperty.class.getSimpleName(), DescriptionLogoPngServerProperty.class.getSimpleName());
     }
     
     @Override

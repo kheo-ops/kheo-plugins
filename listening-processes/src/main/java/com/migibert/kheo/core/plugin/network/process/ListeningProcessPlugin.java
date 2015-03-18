@@ -1,5 +1,8 @@
 package com.migibert.kheo.core.plugin.network.process;
 
+import java.util.List;
+
+import com.google.common.collect.Lists;
 import com.migibert.kheo.core.plugin.KheoPlugin;
 
 public class ListeningProcessPlugin implements KheoPlugin<ListeningProcessServerProperty> {
@@ -18,10 +21,10 @@ public class ListeningProcessPlugin implements KheoPlugin<ListeningProcessServer
     public String getName() {
         return ListeningProcessPlugin.class.getSimpleName();
     }
-
+    
     @Override
-    public String getPropertyName() {
-        return ListeningProcessServerProperty.class.getSimpleName();
+    public List<String> getPropertiesNames() {
+        return Lists.newArrayList(ListeningProcessServerProperty.class.getSimpleName());
     }
     
     @Override
